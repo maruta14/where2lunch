@@ -1,11 +1,15 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: 
-  zip: 
+  name: MyString
+  address: MyString
+  holiday: MyString
+  time: MyString
   tel: MyString
 
 two:
-  name: 
-  zip: 
+  name: MyString
+  address: MyString
+  holiday: MyString
+  time: MyString
   tel: MyString

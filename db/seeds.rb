@@ -6,5 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Eatery.create(name: "te.to.te", zip:"305-0003",
-   address:"茨城県つくば市桜２丁目１−７ グランパスつくば102号", tel:"029-857-7793")
+Eatery.create(name: "七福軒", address: "茨城県つくば市天久保1-6-14", tel: "029-893-4799",
+              holiday: "日曜日・第一月曜日",time:"11:00～14:00 18:00～")
+Eatery.create(name: "むじゃき", address: "茨城県つくば市天久保2-10-19", tel: "029-896-8988",
+              holiday: "不定休",time:"11:30～14:30 18:00～22:00")
