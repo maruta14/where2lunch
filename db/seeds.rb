@@ -10,3 +10,7 @@ Eatery.create(name: "七福軒", address: "茨城県つくば市天久保1-6-14"
               holiday: "日曜日・第一月曜日",time:"11:00～14:00 18:00～")
 Eatery.create(name: "むじゃき", address: "茨城県つくば市天久保2-10-19", tel: "029-896-8988",
               holiday: "不定休",time:"11:30～14:30 18:00～22:00")
+Eatery.create(name: "俺の生きる道", address: "茨城県つくば市天久保2-10-19", tel: "029-896-8988",
+              holiday: "不定休",time:"11:30～13:30 17:30～21:00")
+Eatery.create(name: "逆流", address: "茨城県つくば市小田4687-1", tel: "029-896-8988",
+              holiday: "月曜日",time:"11:30～14:30 18:00～22:00")
