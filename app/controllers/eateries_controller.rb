@@ -11,7 +11,5 @@ class EateriesController < ApplicationController
   def eatery_params
     params.require(:eatery).permit(:name)
   end
-def new
-end
 
 end
