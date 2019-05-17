@@ -5,8 +5,4 @@ local: true do |f| %>
    <%= f.text_field :name, id: 'eatery_name' %>
 </div>
 <%= f.submit %>
-<% flash.each do |message_type, message| %>
-     <div class="alert alert-<%= message_type %>"><%= message %></div>
-<% end %>
-<%= yield %>
 <% end %>
