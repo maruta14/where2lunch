@@ -10,6 +10,13 @@ class SessionsController < ApplicationController
        flash[:danger] = 'ログインに失敗しました'
        render :new
    end
+
+   def destroy
+     session.delete(:user_id)
+     flash[:success] = 'ログアウトしました'
+     redirect_to root_path
+   end
+
   end
   private
 
