@@ -1,0 +1,19 @@
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="container">
+    <%= link_to "怒りポエム", root_path, id: "logo" %>
+    <!-- <a href="#" id='logo'><%= full_title(yield(:title)) %></a> -->
+    <nav>
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to "Home",   root_path %></li>
+        <li><%= link_to "Help",   help_path %></li>
+        <li>
+        <% if logged_in? %>
+          <%= link_to "Log out", logout_path, method: :delete %>
+        <% else %>
+         <%= link_to "Log in", login_path %>
+        <% end %>
+      </li>
+     </ul>
+    </nav>
+  </div>
+</header>
