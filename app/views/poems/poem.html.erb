@@ -1,4 +1,9 @@
 <div class="center jumbotron">
   <h2>ここに怒りをぶつけてね</h2>
-  <%= link_to "結果発表へ", result_path, class: "btn btn-lg btn-primary" %>
+  <div class="form-group">
+    <%= form_with model: Poem.new, url: {action: :point},local: true do |f| %>
+      <%= f.text_area :poem %>
+      <%= f.submit "結果発表へ", class: "btn btn-primary" %>
+    <% end %>
+  </div>
 </div>

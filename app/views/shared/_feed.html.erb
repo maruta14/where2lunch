@@ -1,0 +1,10 @@
+<% if @feed_items.any? %>
+  <ol class="microposts">
+    <% @feed_items.each do |f| %>
+    <%= link_to gravatar_for(current_user, size: 40), current_user %>
+      <li>ユーザ名 　　<%= f.user.name %> 　　　　　点数 <%= f.keisan %>点</li>
+      <li><%= f.content %></li>
+    <% end %>
+  </ol>
+  <%= will_paginate @feed_items %>
+<% end %>

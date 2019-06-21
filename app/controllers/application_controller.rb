@@ -1,14 +1,15 @@
 class ApplicationController < ActionController::Base
-  helper_method :current_user, :logged_in?
+  protect_from_forgery with: :exception
+   include SessionsHelper
 
-  private
+   private
 
-  def current_user
-      @current_user ||= User.find_by(id: session[:user_id]) if session[:user_id]
-  end
-
-  def logged_in?
-       !session[:user_id].nil?
-  end
-
+     # ユーザーのログインを確認する
+     def logged_in_user
+       unless logged_in?
+         store_location
+         flash[:danger] = "Please log in."
+         redirect_to login_url
+       end
+     end
 end

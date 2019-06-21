@@ -14,3 +14,15 @@ Eatery.create(name: "俺の生きる道", address: "茨城県つくば市天久�
               holiday: "不定休",time:"11:30～13:30 17:30～21:00")
 Eatery.create(name: "逆流", address: "茨城県つくば市小田4687-1", tel: "029-896-8988",
               holiday: "月曜日",time:"11:30～14:30 18:00～22:00")
+Poem.create(name:"タラちゃん", poem: "むしさんと遊んだですぅ", score: 2)
+Poem.create(name:"タラちゃん", poem: "いかりにふるえているですぅ", score: 60)
+User.create!(name:  "Example User",
+             email: "example@railstutorial.org",
+             password:              "foobar",
+             password_confirmation: "foobar")
+
+User.create!(name:  "maru",
+             email: "maruta@gmail.com",
+             password:              "foobar",
+             password_confirmation: "foobar",
+             admin: true)
