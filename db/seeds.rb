@@ -26,3 +26,11 @@ User.create!(name:  "maru",
              password:              "foobar",
              password_confirmation: "foobar",
              admin: true)
+
+# リレーションシップ
+# users = User.all
+# user  = users.first
+# following = users[0]
+# followers = users[1]
+# following.each { |followed| user.follow(followed) }
+# followers.each { |follower| follower.follow(user) }

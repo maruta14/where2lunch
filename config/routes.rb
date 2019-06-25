@@ -18,6 +18,11 @@ Rails.application.routes.draw do
   get  '/result',    to: 'poems#result'
   post 'poems/point'
   get  '/post', to: 'microposts#post'
-  resources :users
+  resources :users do
+    member do
+      get :following, :followers
+    end
+  end
   resources :microposts,          only: [:create, :destroy]
+  resources :relationships,       only: [:create, :destroy]
 end
